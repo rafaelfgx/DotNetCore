@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Security</AssemblyName>
+        <Description>DotNetCore.Security</Description>
+        <PackageId>DotNetCore.Security</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/master/source/Security</PackageProjectUrl>
+        <PackageTags>Security, Cryptography, Hash, JWT, JsonWebToken</PackageTags>
+        <RepositoryUrl>https://github.com/rafaelfgx/DotNetCore/tree/master/source/Security</RepositoryUrl>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Title>DotNetCore.Security</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.5" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
+    </ItemGroup>
+</Project>

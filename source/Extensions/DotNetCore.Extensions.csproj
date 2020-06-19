@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Extensions</AssemblyName>
+        <Description>DotNetCore.Extensions</Description>
+        <PackageId>DotNetCore.Extensions</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/master/source/Extensions</PackageProjectUrl>
+        <PackageTags>Extension, Extensions, Byte, Claim, ClaimsPrincipal, DirectoryInfo, Enum, Object, Queryable, String</PackageTags>
+        <RepositoryUrl>https://github.com/rafaelfgx/DotNetCore/tree/master/source/Extensions</RepositoryUrl>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Title>DotNetCore.Extensions</Title>
+    </PropertyGroup>
+</Project>

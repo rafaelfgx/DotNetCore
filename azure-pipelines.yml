@@ -1,0 +1,38 @@
+resources:
+- repo: self
+  clean: true
+
+pool:
+  name: Azure Pipelines
+variables:
+  BuildConfiguration: 'Release'
+
+steps:
+- task: UseDotNet@2
+  displayName: '.NET SDK'
+  inputs:
+    useGlobalJson: true
+
+- task: DotNetCoreCLI@2
+  displayName: '.NET Publish'
+  inputs:
+    command: publish
+    publishWebProjects: false
+    projects: '**/*.csproj'
+    arguments: '--configuration $(BuildConfiguration)'
+    zipAfterPublish: false
+    modifyOutputPath: false
+
+- task: DotNetCoreCLI@2
+  displayName: '.NET Pack'
+  inputs:
+    command: pack
+    packDirectory: '$(build.ArtifactStagingDirectory)'
+    nobuild: true
+    verbosityPack: Diagnostic
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(build.ArtifactStagingDirectory)'
+    ArtifactName: publish

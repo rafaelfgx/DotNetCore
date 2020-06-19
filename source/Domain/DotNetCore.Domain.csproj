@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Domain</AssemblyName>
+        <Description>DotNetCore.Domain</Description>
+        <PackageId>DotNetCore.Domain</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/master/source/Domain</PackageProjectUrl>
+        <PackageTags>Domain, DDD, DomainDrivenDesign, Entity, Event, ValueObject</PackageTags>
+        <RepositoryUrl>https://github.com/rafaelfgx/DotNetCore/tree/master/source/Domain</RepositoryUrl>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Title>DotNetCore.Domain</Title>
+    </PropertyGroup>
+</Project>

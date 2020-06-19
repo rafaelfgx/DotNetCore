@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Results</AssemblyName>
+        <Description>DotNetCore.Results</Description>
+        <PackageId>DotNetCore.Results</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/master/source/Results</PackageProjectUrl>
+        <PackageTags>Result, ResultPattern, Pattern</PackageTags>
+        <RepositoryUrl>https://github.com/rafaelfgx/DotNetCore/tree/master/source/Results</RepositoryUrl>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Title>DotNetCore.Results</Title>
+    </PropertyGroup>
+</Project>

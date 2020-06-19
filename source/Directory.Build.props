@@ -1,0 +1,17 @@
+<Project>
+    <PropertyGroup>
+        <Authors>Rafael Garcia</Authors>
+        <CodeAnalysisRuleset>$(MSBuildThisFileDirectory)Ruleset.ruleset</CodeAnalysisRuleset>
+        <Deterministic>true</Deterministic>
+        <Features>strict</Features>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <LangVersion>latest</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <RepositoryType>git</RepositoryType>
+        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+        <Version>11.41.0</Version>
+    </PropertyGroup>
+</Project>
