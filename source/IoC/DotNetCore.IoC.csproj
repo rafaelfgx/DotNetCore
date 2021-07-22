@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.IoC</AssemblyName>
+        <Description>DotNetCore.IoC</Description>
+        <PackageId>DotNetCore.IoC</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCoreIoC</PackageProjectUrl>
+        <PackageTags>DI, DependencyInjection, IoC, InversionOfControl</PackageTags>
+        <TargetFramework>net5.0</TargetFramework>
+        <Title>DotNetCore.IoC</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+        <PackageReference Include="Scrutor" Version="3.3.0" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Validation</AssemblyName>
+        <Description>DotNetCore.Validation</Description>
+        <PackageId>DotNetCore.Validation</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCoreValidation</PackageProjectUrl>
+        <PackageTags>Validation, Validator, Regex</PackageTags>
+        <TargetFramework>net5.0</TargetFramework>
+        <Title>DotNetCore.Validation</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="10.3.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Results\DotNetCore.Results.csproj" />
+    </ItemGroup>
+</Project>

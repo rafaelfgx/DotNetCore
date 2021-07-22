@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Extensions</AssemblyName>
+        <Description>DotNetCore.Extensions</Description>
+        <PackageId>DotNetCore.Extensions</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCoreExtensions</PackageProjectUrl>
+        <PackageTags>Extension, Extensions, Byte, Claim, ClaimsPrincipal, DirectoryInfo, Enum, Object, Queryable, String</PackageTags>
+        <TargetFramework>net5.0</TargetFramework>
+        <Title>DotNetCore.Extensions</Title>
+    </PropertyGroup>
+</Project>
