@@ -1,0 +1,36 @@
+name: publish
+on:
+  push:
+    branches: [main]
+jobs:
+  unlist:
+    runs-on: windows-latest
+    steps:
+      - name: DotNet NuGet Delete
+        shell: pwsh
+        run: |
+          $packages = Invoke-WebRequest -UseBasicParsing -Uri "https://azuresearch-usnc.nuget.org/query?q=owner:rafaelfgx" | ConvertFrom-Json
+          foreach($package in $packages.data)
+          {
+            foreach($version in $package.versions)
+            {
+              dotnet nuget delete $package.id $version.version --non-interactive --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+            }
+          }
+  publish:
+    runs-on: ubuntu-latest
+    needs: unlist
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: DotNet Setup
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "6.x.x"
+
+      - name: DotNet Pack
+        run: dotnet pack source --configuration Release --output packages
+
+      - name: DotNet NuGet Push
+        run: dotnet nuget push "packages/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate --no-symbols

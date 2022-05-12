@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.RabbitMQ</AssemblyName>
+        <Description>DotNetCore.RabbitMQ</Description>
+        <PackageId>DotNetCore.RabbitMQ</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/RabbitMQ</PackageProjectUrl>
+        <PackageTags>RabbitMQ, Queue, Broker, MessageBroker</PackageTags>
+        <TargetFramework>net6.0</TargetFramework>
+        <Title>DotNetCore.RabbitMQ</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="RabbitMQ.Client" Version="6.3.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Extensions\DotNetCore.Extensions.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.1.1" />
+    </ItemGroup>
+</Project>

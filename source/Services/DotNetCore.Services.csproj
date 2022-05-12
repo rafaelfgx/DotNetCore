@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Services</AssemblyName>
+        <Description>DotNetCore.Services</Description>
+        <PackageId>DotNetCore.Services</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Services</PackageProjectUrl>
+        <PackageTags>Services</PackageTags>
+        <TargetFramework>net6.0</TargetFramework>
+        <Title>DotNetCore.Services</Title>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.1.1" />
+    </ItemGroup>
+</Project>

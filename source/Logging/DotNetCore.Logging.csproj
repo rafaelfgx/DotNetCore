@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Logging</AssemblyName>
+        <Description>DotNetCore.Logging</Description>
+        <PackageId>DotNetCore.Logging</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Logging</PackageProjectUrl>
+        <PackageTags>Log, Logging, Logger</PackageTags>
+        <TargetFramework>net6.0</TargetFramework>
+        <Title>DotNetCore.Logging</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+        <PackageReference Include="Serilog.Extensions.Hosting" Version="4.2.0" />
+        <PackageReference Include="Serilog.Formatting.Compact" Version="1.1.0" />
+        <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+        <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\IoC\DotNetCore.IoC.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.1.1" />
+    </ItemGroup>
+</Project>
