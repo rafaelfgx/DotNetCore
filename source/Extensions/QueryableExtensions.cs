@@ -19,7 +19,11 @@ public static class QueryableExtensions
 
         try
         {
-            value = Change(value, left.Type);
+            var propertyInfo = typeof(T).GetProperty(property);
+
+            var t = Nullable.GetUnderlyingType(propertyInfo.PropertyType) ?? propertyInfo.PropertyType;
+
+            value = Change(value, t);
         }
         catch
         {
