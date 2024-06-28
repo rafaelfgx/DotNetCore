@@ -4,11 +4,9 @@ using System.Linq.Expressions;
 
 namespace DotNetCore.EntityFrameworkCore;
 
-public class EFCommandRepository<T> : ICommandRepository<T> where T : class
+public class EFCommandRepository<T>(DbContext context) : ICommandRepository<T> where T : class
 {
-    private readonly DbContext _context;
-
-    public EFCommandRepository(DbContext context) => _context = context;
+    private readonly DbContext _context = context;
 
     private DbSet<T> Set => _context.CommandSet<T>();
 

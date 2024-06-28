@@ -4,11 +4,9 @@ using System.Linq.Expressions;
 
 namespace DotNetCore.EntityFrameworkCore;
 
-public class EFQueryRepository<T> : IQueryRepository<T> where T : class
+public class EFQueryRepository<T>(DbContext context) : IQueryRepository<T> where T : class
 {
-    private readonly DbContext _context;
-
-    public EFQueryRepository(DbContext context) => _context = context;
+    private readonly DbContext _context = context;
 
     public IQueryable<T> Queryable => _context.QuerySet<T>();
 

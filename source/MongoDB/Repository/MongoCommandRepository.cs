@@ -4,11 +4,9 @@ using System.Linq.Expressions;
 
 namespace DotNetCore.MongoDB;
 
-public class MongoCommandRepository<T> : ICommandRepository<T> where T : class
+public class MongoCommandRepository<T>(IMongoContext context) : ICommandRepository<T> where T : class
 {
-    private readonly IMongoCollection<T> _collection;
-
-    public MongoCommandRepository(IMongoContext context) => _collection = context.Database.GetCollection<T>(typeof(T).Name);
+    private readonly IMongoCollection<T> _collection = context.Database.GetCollection<T>(typeof(T).Name);
 
     public void Add(T item) => _collection.InsertOne(item);
 

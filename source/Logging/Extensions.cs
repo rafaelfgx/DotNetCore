@@ -8,8 +8,7 @@ namespace DotNetCore.Logging;
 
 public static class Extensions
 {
-    public static void Log(this Microsoft.Extensions.Logging.ILogger logger, HttpResponseMessage response)
-    {
+    public static void Log(this Microsoft.Extensions.Logging.ILogger logger, HttpResponseMessage response) =>
         logger.Log
         (
             response.IsSuccessStatusCode ? LogLevel.Information : LogLevel.Error,
@@ -19,7 +18,6 @@ public static class Extensions
             response.RequestMessage?.Content?.ReadAsStringAsync().Result,
             response.Content.ReadAsStringAsync().Result
         );
-    }
 
     public static IHostBuilder UseSerilog(this IHostBuilder builder)
     {
