@@ -3,11 +3,9 @@ using System.Text;
 
 namespace DotNetCore.Security;
 
-public class CryptographyService : ICryptographyService
+public class CryptographyService(string key) : ICryptographyService
 {
-    private readonly string _key;
-
-    public CryptographyService(string key) => _key = key;
+    private readonly string _key = key;
 
     public string Decrypt(string value, string salt)
     {

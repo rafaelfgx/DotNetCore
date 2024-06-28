@@ -5,11 +5,9 @@ using System.Net;
 
 namespace DotNetCore.Mediator;
 
-public sealed class Mediator : IMediator
+public sealed class Mediator(IServiceProvider serviceProvider) : IMediator
 {
-    private readonly IServiceProvider _serviceProvider;
-
-    public Mediator(IServiceProvider serviceProvider) => _serviceProvider = serviceProvider;
+    private readonly IServiceProvider _serviceProvider = serviceProvider;
 
     public async Task<Result> HandleAsync<TRequest>(TRequest request)
     {

@@ -2,33 +2,23 @@ using DotNetCore.Extensions;
 
 namespace DotNetCore.Objects;
 
-public class BinaryFile
-{
-    public BinaryFile
-    (
-        Guid id,
-        string name,
-        byte[] bytes,
-        long length,
-        string contentType
+public class BinaryFile(
+    Guid id,
+    string name,
+    byte[] bytes,
+    long length,
+    string contentType
     )
-    {
-        Id = id;
-        Name = name;
-        Bytes = bytes;
-        Length = length;
-        ContentType = contentType;
-    }
+{
+    public Guid Id { get; } = id;
 
-    public Guid Id { get; }
+    public string Name { get; } = name;
 
-    public string Name { get; }
+    public byte[] Bytes { get; private set; } = bytes;
 
-    public byte[] Bytes { get; private set; }
+    public long Length { get; } = length;
 
-    public long Length { get; }
-
-    public string ContentType { get; }
+    public string ContentType { get; } = contentType;
 
     public static async Task<BinaryFile> ReadAsync(string directory, Guid id)
     {

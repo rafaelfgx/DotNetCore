@@ -18,26 +18,24 @@ public static class ServiceCollectionExtensions
 
     public static IServiceCollection AddFileExtensionContentTypeProvider(this IServiceCollection services) => services.AddSingleton<IContentTypeProvider, FileExtensionContentTypeProvider>();
 
-    public static IMvcBuilder AddJsonOptions(this IMvcBuilder builder)
-    {
-        return builder.AddJsonOptions(options =>
+    public static IMvcBuilder AddJsonOptions(this IMvcBuilder builder) =>
+         builder.AddJsonOptions(options =>
         {
             options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
             options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
             options.JsonSerializerOptions.Converters.Add(new JsonStringBoolConverter());
         });
-    }
+
 
     public static void AddSwaggerDefault(this IServiceCollection services) => services.AddSwaggerGen(ConfigureSwaggerGenOptions);
 
-    public static IServiceCollection ConfigureFormOptionsMaxLengthLimit(this IServiceCollection services)
-    {
-        return services.Configure<FormOptions>(options =>
+    public static IServiceCollection ConfigureFormOptionsMaxLengthLimit(this IServiceCollection services)=>
+         services.Configure<FormOptions>(options =>
         {
             options.ValueLengthLimit = int.MaxValue;
             options.MultipartBodyLengthLimit = int.MaxValue;
         });
-    }
+    
 
     private static void ConfigureSwaggerGenOptions(this SwaggerGenOptions options)
     {
