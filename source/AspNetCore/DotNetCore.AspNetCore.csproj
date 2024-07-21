@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.AspNetCore</AssemblyName>
+        <Description>DotNetCore.AspNetCore</Description>
+        <PackageId>DotNetCore.AspNetCore</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/AspNetCore</PackageProjectUrl>
+        <PackageTags>AspNetCore, Attribute, Attributes, IApplicationBuilder, ApplicationBuilder, IHostBuilder, HostBuilder, HttpRequest, IServiceCollection, ServiceCollection, Result, Results, IActionResult, ActionResult</PackageTags>
+        <Title>DotNetCore.AspNetCore</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Objects\DotNetCore.Objects.csproj" />
+        <ProjectReference Include="..\Results\DotNetCore.Results.csproj" />
+    </ItemGroup>
+</Project>
