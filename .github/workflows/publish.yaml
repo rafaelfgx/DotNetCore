@@ -1,0 +1,26 @@
+name: publish
+on:
+  push:
+    branches: [main]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: DotNet Setup
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "9.x.x"
+        env:
+          NUGET_PACKAGES: ${{ runner.temp }}/nuget/packages
+
+      - name: DotNet Pack
+        run: find ./source -name '*.csproj' -exec dotnet pack {} --configuration Release --output packages \;
+
+      - name: DotNet NuGet Delete
+        run: curl -s https://azuresearch-usnc.nuget.org/query?q=owner:rafaelfgx | jq -r '.data[] | "dotnet nuget delete \(.id) \(.version) --non-interactive --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}"' | xargs -I {} bash -c "{}"
+
+      - name: DotNet NuGet Push
+        run: dotnet nuget push "packages/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate --no-symbols
