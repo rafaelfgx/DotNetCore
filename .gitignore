@@ -1,4 +1,4 @@
-﻿*.bat
+*.bat
 *.dll
 *.exe
 *.lib
@@ -18,3 +18,7 @@
 [Rr]elease
 [Rr]eleases
 [Tt]est[Rr]esults
+bin
+obj
+.vs
+.vscode
