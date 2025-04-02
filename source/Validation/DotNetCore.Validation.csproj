@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Validation</AssemblyName>
+        <Description>DotNetCore.Validation</Description>
+        <PackageId>DotNetCore.Validation</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Validation</PackageProjectUrl>
+        <PackageTags>Validation, Validator</PackageTags>
+        <Title>DotNetCore.Validation</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" />
+    </ItemGroup>
+</Project>
