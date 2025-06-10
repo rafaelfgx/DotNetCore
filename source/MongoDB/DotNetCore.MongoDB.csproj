@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.MongoDB</AssemblyName>
+        <Description>DotNetCore.MongoDB</Description>
+        <PackageId>DotNetCore.MongoDB</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/MongoDB</PackageProjectUrl>
+        <PackageTags>ORM, ObjectRelationalMapping, Mongo MongoDB, Context, Repository, GenericRepository, BaseRepository, RepositoryBase, CommandRepository, QueryRepository, CQRS, Command, Query</PackageTags>
+        <Title>DotNetCore.MongoDB</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MongoDB.Driver" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Repositories\DotNetCore.Repositories.csproj" />
+    </ItemGroup>
+</Project>
