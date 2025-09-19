@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Services</AssemblyName>
+        <Description>DotNetCore.Services</Description>
+        <PackageId>DotNetCore.Services</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Services</PackageProjectUrl>
+        <PackageTags>Services</PackageTags>
+        <Title>DotNetCore.Services</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+        <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" />
+        <PackageReference Include="Polly" />
+    </ItemGroup>
+</Project>
