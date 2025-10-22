@@ -40,6 +40,10 @@ public class EFCommandRepository<T> : ICommandRepository<T> where T : class
 
     public Task DeleteAsync(Expression<Func<T, bool>> where) { }
 
+    public void DeleteRange(IEnumerable<T> items) { }
+
+    public Task DeleteRangeAsync(IEnumerable<T> items) { }
+
     public void Update(T item) { }
 
     public Task UpdateAsync(T item) { }

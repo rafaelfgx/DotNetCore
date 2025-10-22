@@ -38,6 +38,10 @@ public class EFCommandRepository<T>(DbContext context) : ICommandRepository<T> w
 
     public Task DeleteAsync(Expression<Func<T, bool>> where) => Task.Run(() => Delete(where));
 
+    public void DeleteRange(IEnumerable<T> items) => Set.RemoveRange(items);
+
+    public Task DeleteRangeAsync(IEnumerable<T> items) => Task.Run(() => DeleteRange(items));
+
     public void Update(T item)
     {
         var primaryKeyValues = context.PrimaryKeyValues<T>(item);
