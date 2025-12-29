@@ -1,0 +1,34 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <EnablePackageVersionOverride>false</EnablePackageVersionOverride>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageVersion Include="AgileObjects.AgileMapper" Version="1.8.1" />
+        <PackageVersion Include="FluentValidation" Version="12.1.1" />
+        <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.0" />
+        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.Extensions.Configuration" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.Extensions.DependencyModel" Version="10.0.1" />
+        <PackageVersion Include="Microsoft.Extensions.Localization.Abstractions" Version="10.0.1" />
+        <PackageVersion Include="MongoDB.Driver" Version="3.5.2" />
+        <PackageVersion Include="Polly" Version="8.6.5" />
+        <PackageVersion Include="RabbitMQ.Client" Version="7.2.0" />
+        <PackageVersion Include="Scrutor" Version="7.0.0" />
+        <PackageVersion Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+        <PackageVersion Include="Serilog.Extensions.Hosting" Version="10.0.0" />
+        <PackageVersion Include="Serilog.Formatting.Compact" Version="3.0.0" />
+        <PackageVersion Include="Serilog.Settings.Configuration" Version="10.0.0" />
+        <PackageVersion Include="Serilog.Sinks.Console" Version="6.1.1" />
+        <PackageVersion Include="Serilog.Sinks.File" Version="7.0.0" />
+        <PackageVersion Include="Swashbuckle.AspNetCore" Version="10.1.0" />
+    </ItemGroup>
+</Project>
