@@ -1,0 +1,18 @@
+<Solution>
+    <Project Path="AspNetCore/DotNetCore.AspNetCore.csproj" />
+    <Project Path="Domain/DotNetCore.Domain.csproj" />
+    <Project Path="EntityFrameworkCore/DotNetCore.EntityFrameworkCore.csproj" />
+    <Project Path="Extensions/DotNetCore.Extensions.csproj" />
+    <Project Path="IoC/DotNetCore.IoC.csproj" />
+    <Project Path="Logging/DotNetCore.Logging.csproj" />
+    <Project Path="Mapping/DotNetCore.Mapping.csproj" />
+    <Project Path="Mediator/DotNetCore.Mediator.csproj" />
+    <Project Path="MongoDB/DotNetCore.MongoDB.csproj" />
+    <Project Path="Objects/DotNetCore.Objects.csproj" />
+    <Project Path="RabbitMQ/DotNetCore.RabbitMQ.csproj" />
+    <Project Path="Repositories/DotNetCore.Repositories.csproj" />
+    <Project Path="Results/DotNetCore.Results.csproj" />
+    <Project Path="Security/DotNetCore.Security.csproj" />
+    <Project Path="Services/DotNetCore.Services.csproj" />
+    <Project Path="Validation/DotNetCore.Validation.csproj" />
+</Solution>

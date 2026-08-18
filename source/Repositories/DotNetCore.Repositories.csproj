@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Repositories</AssemblyName>
+        <Description>DotNetCore.Repositories</Description>
+        <PackageId>DotNetCore.Repositories</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Repositories</PackageProjectUrl>
+        <PackageTags>Repository, GenericRepository, BaseRepository, RepositoryBase, CommandRepository, QueryRepository, CQRS, Command, Query</PackageTags>
+        <Title>DotNetCore.Repositories</Title>
+    </PropertyGroup>
+</Project>
