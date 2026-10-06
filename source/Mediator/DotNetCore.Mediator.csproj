@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>DotNetCore.Mediator</AssemblyName>
+        <Description>DotNetCore.Mediator</Description>
+        <PackageId>DotNetCore.Mediator</PackageId>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Mediator</PackageProjectUrl>
+        <PackageTags>Mediator, MediatorPattern, Pattern, CQRS, Command, CommandHandler, Query, QueryHandler, Handler, Request, Response</PackageTags>
+        <Title>DotNetCore.Mediator</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+        <PackageReference Include="Microsoft.Extensions.DependencyModel" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Results\DotNetCore.Results.csproj" />
+    </ItemGroup>
+</Project>
