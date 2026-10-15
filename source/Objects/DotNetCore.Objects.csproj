@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Objects</PackageProjectUrl>
+        <PackageTags>Object, DTO, DataTransferObject</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Extensions\DotNetCore.Extensions.csproj" />
+    </ItemGroup>
+</Project>

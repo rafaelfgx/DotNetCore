@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Mapping</PackageProjectUrl>
+        <PackageTags>Map, Mapping, Mapper, Clone, Merge, ObjectMap, ObjectMapping, ObjectMapper, ObjectClone, ObjectMerge</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="AgileObjects.AgileMapper" />
+    </ItemGroup>
+</Project>

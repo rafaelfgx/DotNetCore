@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Validation</PackageProjectUrl>
+        <PackageTags>Validation, Validator</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" />
+    </ItemGroup>
+</Project>

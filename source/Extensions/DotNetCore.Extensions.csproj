@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Extensions</PackageProjectUrl>
+        <PackageTags>Extension, Extensions, Byte, Claim, ClaimsPrincipal, DirectoryInfo, Enum, Object, Queryable, String</PackageTags>
+    </PropertyGroup>
+</Project>
