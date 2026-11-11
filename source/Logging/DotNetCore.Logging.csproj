@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageProjectUrl>https://github.com/rafaelfgx/DotNetCore/tree/main/source/Logging</PackageProjectUrl>
+        <PackageTags>Log, Logging, Logger</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Serilog.Enrichers.Environment" />
+        <PackageReference Include="Serilog.Extensions.Hosting" />
+        <PackageReference Include="Serilog.Formatting.Compact" />
+        <PackageReference Include="Serilog.Settings.Configuration" />
+        <PackageReference Include="Serilog.Sinks.Console" />
+        <PackageReference Include="Serilog.Sinks.File" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\IoC\DotNetCore.IoC.csproj" />
+    </ItemGroup>
+</Project>
